@@ -1,0 +1,84 @@
+/*  Media Query File  */
+
+
+
+
+/* Dashboard Style */
+
+.container-fluid .row .hide {
+	display: none;
+}
+
+@media (max-width: 1170px) {
+
+	.container-fluid .row .col-sm-2 {
+		display: none;
+	}
+	.dashboard,.post, .posts, .admin, .admins, .comment, .comments, .profile,.settings, .categories {
+		margin-top: 100px;
+	}
+	.container-fluid .row .hide {
+		display: block;
+		position: absolute;
+		z-index: 9999;
+		top: 80px;
+		left: 40%;
+	}
+	.container-fluid .row .hide button {
+		min-width: 150px;
+	}
+}
+
+@media (max-width: 768px) { 
+
+	.container-fluid .row .counts .row div {
+		margin-bottom: 10px;
+		margin-left: 0;
+		max-width: 45%;
+		margin-left: 20px;
+	}
+
+}
+@media (max-width: 460px) {
+	.dashboard,.post,
+	.posts,
+	.admin,
+	.admins,
+	.comment,
+	.approved-comments,
+	.unpproved-comments,
+	.profile,
+	.settings,
+	.categories {
+		margin-top: 120px;
+	}
+	.container-fluid .row .hide {
+		top: 100px;
+		left: 5%;
+	}
+	span.tagline {
+		display: none;
+	}
+}
+
+@media (max-width: 1000px) {
+
+	td.action-links a {
+		width: 55px;
+		margin-bottom: 10px;
+	}
+	td.post-content,
+	td.title,
+	td.post-title,
+	td.comment {
+		min-width: 250px;
+	}
+}
+
+@media (max-width: 420px){
+	.container-fluid .row .counts .row div {
+		margin-left: 0;
+		max-width: 90%;
+		margin: 10px;
+	}
+}
